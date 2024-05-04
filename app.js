@@ -232,3 +232,220 @@ aboutMeCVDownloadBtn();
 skillsAnimation();
 
 workAnimation();
+
+function revealAnimation() {
+  function navAnimation() {
+    let tl = gsap.timeline();
+    tl.from(
+      "nav #logo",
+      {
+        y: -80,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "nav"
+    );
+    tl.from(
+      "nav #lines",
+      {
+        y: -80,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "nav"
+    );
+    tl.from(
+      "nav #nav-menu-icons",
+      {
+        opacity: 0,
+        y: -80,
+        duration: 0.8,
+      },
+      "nav"
+    );
+    tl.from(
+      "#landing-page #right-side h1,#landing-page #right-side p",
+      {
+        opacity: 0,
+        x: 150,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: "[0.33, 1, 0.68, 1]",
+      },
+      "-=.3"
+    );
+    tl.from(
+      "#landing-page #left-side",
+      {
+        scale: 0.5,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=1"
+    );
+  }
+  function aboutAnimation() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about-me",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 2,
+      },
+    });
+    tl.from(
+      "#about-me",
+      {
+        opacity: 0,
+        duration: 0.8,
+      },
+      "info"
+    );
+    tl.from(
+      "#about-me #left-info",
+      {
+        x: -200,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "info"
+    );
+    tl.from(
+      "#about-me #right-info",
+      {
+        x: 200,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "info"
+    );
+  }
+  function skillAnimation() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#skills",
+        start: "top 90%",
+        end: "top -60%",
+        scrub: 2,
+      },
+    });
+    tl.from(
+      "#skills",
+      {
+        opacity: 0,
+        duration: 0.8,
+      },
+      "skills"
+    );
+    tl.from(
+      "#skills .skill-container",
+      {
+        opacity: 0,
+        scale: 0,
+        duration: 0.8,
+        stagger: 0.2,
+      },
+      "skills"
+    );
+  }
+  function workAnimation() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#my-work",
+        start: "top 90%",
+        markers: true,
+        end: "top -60%",
+        scrub: 2,
+      },
+    });
+    tl.from(
+      "#my-work",
+      {
+        opacity: 0,
+        duration: 0.8,
+      },
+      "work"
+    );
+    tl.from(
+      "#my-work .work-projects",
+      {
+        opacity: 0.5,
+        scale: 0.3,
+        stagger: 0.2,
+      },
+      "work"
+    );
+  }
+  function educationAnimation() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#education",
+        start: "top 80%",
+        end: "top -50%",
+        scrub: 2,
+      },
+    });
+    tl.from(
+      "#education",
+      {
+        opacity: 0,
+        duration: 0.8,
+      },
+      "edu"
+    );
+    tl.from(
+      "#education .edu-left",
+      {
+        x: -200,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.4,
+      },
+      "edu"
+    );
+    tl.from(
+      "#education .edu-right",
+      {
+        x: 200,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.4,
+      },
+      "edu"
+    );
+  }
+  function contactAnimation() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#contact-me",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 2,
+      },
+    });
+    tl.from(
+      "#contact-me",
+      {
+        opacity: 0,
+        duration: 0.8,
+      },
+      "contact"
+    );
+    tl.from(
+      "#contact-me #contact-details",
+      {
+        scale: 0,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "contact"
+    );
+  }
+  navAnimation();
+  aboutAnimation();
+  skillAnimation();
+  workAnimation();
+  educationAnimation();
+  contactAnimation();
+}
+revealAnimation();
