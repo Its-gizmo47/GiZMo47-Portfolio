@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Train One
+- Font Author: Copyright 2020 The Train Project Authors (https://github.com/fontworks-fonts/Train/)
+- Font Source: https://fonts.gstatic.com/s/trainone/v13/gyB-hwkiNtc6KnxUVjWHOqbZRY7JVQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
