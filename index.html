@@ -35,6 +35,12 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="cursor-default bg-zinc-950 text-zinc-200">
+    <!-- <div
+      id="loader"
+      class="fixed top-0 left-0 flex justify-center items-center w-full bg-zinc-950 z-50 h-72"
+    >
+      <h1 class="text-6xl text-zinc-200">GiZMo47</h1>
+    </div> -->
     <main data-scroll-container>
       <nav
         class="px-6 lg:px-10 h-[10vh] w-full fixed top-0 left-0 z-50 flex justify-between items-center"
@@ -78,7 +84,7 @@
             class="absolute w-full h-full bg-yellow-600 -left-5 -bottom-5 rounded-2xl"
           ></div>
           <img
-            class="h-full w-full object-cover rounded-2xl relative border border-zinc-600"
+            class="h-full w-full object-cover rounded-2xl relative border border-zinc-600 bg-zinc-950"
             src="./assets/poftfolio-Img.jpg"
             alt=""
           />
@@ -111,7 +117,7 @@
         data-scroll-section
         data-scroll-speed=".3"
         id="about-me"
-        class="flex flex-col gap-8 items-center px-8 md:gap-12 relative py-10 border-b border-zinc-600 bg-zinc-950"
+        class="flex flex-col gap-8 items-center px-8 md:gap-12 relative py-10 border-b border-zinc-600 bg-zinc-950 overflow-hidden"
       >
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
           About <span class="text-yellow-400">Me</span>
@@ -474,7 +480,7 @@
         data-scroll-section
         data-scroll-speed="-.1"
         id="education"
-        class="flex flex-col items-center px-8 relative py-10 border-b border-zinc-600 bg-zinc-950"
+        class="flex flex-col items-center px-8 relative py-10 border-b border-zinc-600 bg-zinc-950 overflow-hidden"
       >
         <h2
           class="text-3xl sm:text-4xl lg:text-5xl font-semibold md:font-bold uppercase w-fit"
@@ -486,7 +492,7 @@
           class="mt-12 md:mt-16 flex flex-wrap justify-center items-center gap-10 mx-4"
         >
           <div
-            class="education-card w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+            class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
           >
             <div
               class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
@@ -519,7 +525,7 @@
             </p >
           </div> -->
           <div
-            class="education-card w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+            class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
           >
             <div
               class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
@@ -544,7 +550,7 @@
             </p>
           </div>
           <div
-            class="education-card w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+            class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
           >
             <div
               class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
@@ -569,7 +575,7 @@
             </p>
           </div>
           <div
-            class="education-card w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+            class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
           >
             <div
               class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
