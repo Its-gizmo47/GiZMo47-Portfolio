@@ -35,13 +35,26 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="cursor-default bg-zinc-950 text-zinc-200">
-    <!-- <div
-      id="loader"
-      class="fixed top-0 left-0 flex justify-center items-center w-full bg-zinc-950 z-50 h-72"
+    <div
+      id="loading"
+      class="fixed top-0 left-0 h-screen w-full z-[999] flex justify-center items-center bg-zinc-950"
     >
-      <h1 class="text-6xl text-zinc-200">GiZMo47</h1>
-    </div> -->
-    <main data-scroll-container>
+      <div
+        id="loading-overlay"
+        class="w-0 h-full bg-zinc-200 absolute top-0 left-0"
+      ></div>
+      <h3
+        class="text-4xl md:text-6xl text-zinc-200 font-thin mix-blend-difference absolute md:top-1/2 md:left-[10%] top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        0%
+      </h3>
+      <h1
+        class="text-5xl md:text-7xl text-zinc-200 font-semibold relative mix-blend-difference italic"
+      >
+        GiZMo47
+      </h1>
+    </div>
+    <main data-scroll-container class="overflow-hidden relative h-screen">
       <nav
         class="px-6 lg:px-10 h-[10vh] w-full fixed top-0 left-0 z-50 flex justify-between items-center"
       >
@@ -77,7 +90,7 @@
         data-scroll-section
         data-scroll-speed="-.3"
         id="landing-page"
-        class="flex flex-col md:flex-row justify-start md:justify-evenly gap-16 items-center px-8 relative py-20 border-b border-zinc-600 mt-6 bg-zinc-950 overflow-hidden"
+        class="flex flex-col md:flex-row justify-start md:justify-evenly gap-16 items-center px-8 relative py-20 mt-12 border-b border-zinc-600 bg-zinc-950 overflow-hidden"
       >
         <div id="left-side" class="h-[50vh] max-w-72 relative">
           <div
