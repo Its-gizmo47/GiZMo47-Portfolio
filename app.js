@@ -147,7 +147,7 @@ function revealAnimation() {
       "#about-me",
       {
         opacity: 0,
-        duration: 0.2,
+        duration: 0.8,
       },
       "info"
     )
@@ -183,7 +183,7 @@ function revealAnimation() {
       "#skills",
       {
         opacity: 0,
-        duration: 0.2,
+        duration: 0.8,
       },
       "skills"
     )
@@ -201,11 +201,11 @@ function revealAnimation() {
   function workAnimation() {
     gsap.from("#my-work", {
       opacity: 0,
-      duration: 0.2,
+      duration: 0.8,
       scrollTrigger: {
         trigger: "#my-work",
         start: "top 90%",
-        end: "top 0%",
+        end: "top -50%",
         scrub: 2,
       },
     })
@@ -223,7 +223,7 @@ function revealAnimation() {
       "#education",
       {
         opacity: 0,
-        duration: 0.2,
+        duration: 0.8,
       },
       "edu"
     )
@@ -261,7 +261,7 @@ function revealAnimation() {
       "#contact-me",
       {
         opacity: 0.4,
-        duration: 0.2,
+        duration: 0.8,
       },
       "contact"
     )
