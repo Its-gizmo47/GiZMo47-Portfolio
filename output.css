@@ -24,7 +24,9 @@
 ::after {
   --tw-content: "";
 }
-
+::selection {
+  background-color: #333;
+}
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -657,8 +659,16 @@ video {
   top: 65%;
 }
 
+.top-\[80\%\] {
+  top: 80%;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-\[999\] {
+  z-index: 999;
 }
 
 .mx-4 {
@@ -762,6 +772,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-10 {
@@ -1069,6 +1087,16 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1114,8 +1142,16 @@ video {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-none {
@@ -1160,6 +1196,10 @@ video {
   opacity: 0;
 }
 
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
 .transition {
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
@@ -1190,6 +1230,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 nav #nav-menu-icons .nav-icon {
@@ -1391,6 +1435,10 @@ nav #nav-menu-icons .nav-icon.activated i {
 }
 
 @media (min-width: 768px) {
+  .md\:left-\[10\%\] {
+    left: 10%;
+  }
+
   .md\:right-10 {
     right: 2.5rem;
   }
@@ -1440,6 +1488,16 @@ nav #nav-menu-icons .nav-icon.activated i {
 
   .md\:gap-20 {
     gap: 5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .md\:text-base {
