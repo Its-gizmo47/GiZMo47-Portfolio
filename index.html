@@ -1,577 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GiZMo47 Portfolio</title>
-    <link rel="icon" href="./assets/Favicon/favicon.ico" type="image/x-icon" />
-    <link
-      rel="icon"
-      sizes="16x16"
-      href="./assets/Favicon/favicon-16x16.png"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      sizes="32x32"
-      href="./assets/Favicon/favicon-32x32.png"
-      type="image/png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="./assets/Favicon/android-chrome-192x192.png"
-    />
-    <link rel="manifest" href="./assets/Favicon/site.webmanifest" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GiZMo47 Portfolio</title>
+        <link
+            rel="icon"
+            href="./assets/Favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="./assets/Favicon/favicon-16x16.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="./assets/Favicon/favicon-32x32.png"
+            type="image/png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="192x192"
+            href="./assets/Favicon/android-chrome-192x192.png"
+        />
+        <link rel="manifest" href="./assets/Favicon/site.webmanifest" />
 
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="output.css" />
-  </head>
-  <body class="cursor-default bg-zinc-950 text-zinc-200">
-    <div
-      id="loading"
-      class="fixed top-0 left-0 h-screen w-full z-[999] flex justify-center items-center bg-zinc-950"
-    >
-      <div
-        id="loading-overlay"
-        class="w-0 h-full bg-zinc-200 absolute top-0 left-0"
-      ></div>
-      <h3
-        class="text-4xl md:text-6xl text-zinc-200 font-thin mix-blend-difference absolute md:top-1/2 md:left-[10%] top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        0%
-      </h3>
-      <h1
-        class="text-5xl md:text-7xl text-zinc-200 font-semibold relative mix-blend-difference italic"
-      >
-        GiZMo47
-      </h1>
-    </div>
-    <main data-scroll-container class="overflow-hidden relative h-screen">
-      <nav
-        class="px-6 lg:px-10 h-[10vh] w-full fixed top-0 left-0 z-50 flex justify-between items-center"
-      >
-        <div id="logo" class="text-2xl font-medium">GiZMo47</div>
-        <div id="lines" class="relative h-6 w-16 cursor-pointer md:hidden">
-          <div
-            class="line top-[35%] w-16 h-[2px] bg-zinc-200 absolute left-[50%] -translate-x-1/2"
-          ></div>
-          <div
-            class="line top-[65%] w-16 h-[2px] bg-zinc-200 absolute left-[50%] -translate-x-1/2"
-          ></div>
-        </div>
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="output.css" />
+    </head>
+    <body class="cursor-default bg-zinc-950 text-zinc-200">
         <div
-          id="nav-menu-icons"
-          class="flex flex-col md:flex-row gap-6 absolute -right-16 top-20 md:right-10 md:top-1/2 md:-translate-y-1/2"
+            id="loading"
+            class="fixed top-0 left-0 h-screen w-full z-[999] flex justify-center items-center bg-zinc-950"
         >
-          <a href="#landing-page" class="nav-icon activated">
-            <i class="fa-solid fa-house transition duration-200"></i>
-          </a>
-          <a href="#about-me" class="nav-icon">
-            <i class="fa-solid fa-user transition duration-200"></i>
-          </a>
-          <a href="#my-work" class="nav-icon">
-            <i class="fa-solid fa-briefcase transition duration-200"></i>
-          </a>
-          <a href="#contact-me" class="nav-icon">
-            <i class="fa-solid fa-envelope transition duration-200"></i>
-          </a>
-        </div>
-      </nav>
-      <section
-        data-scroll
-        data-scroll-section
-        data-scroll-speed="-.3"
-        id="landing-page"
-        class="flex flex-col md:flex-row justify-start md:justify-evenly gap-16 items-center px-8 relative py-20 mt-12 bg-zinc-950 overflow-hidden"
-      >
-        <div id="left-side" class="h-[50vh] max-w-72 relative">
-          <div
-            class="absolute w-full h-full bg-yellow-600 -left-5 -bottom-5 rounded-2xl"
-          ></div>
-          <img
-            class="h-full w-full object-cover rounded-2xl relative border border-zinc-600 bg-zinc-950"
-            src="./assets/portfolio-Img-1.jpg"
-            alt=""
-          />
-        </div>
-        <div
-          id="right-side"
-          class="flex flex-col justify-center items-center md:w-6/12 lg:w-5/12"
-        >
-          <h1
-            class="text-3xl sm:text-4xl lg:text-5xl leading-none uppercase w-fit font-bold text-yellow-400 tracking-tight relative before:absolute before:top-4 sm:before:top-5 lg:before:top-6 before:-left-10 sm:before:-left-14 before:w-8 sm:before:w-12 before:h-1 lg:before:h-2 before:bg-yellow-400"
-          >
-            I'm Ali Haider.
-          </h1>
-          <h1
-            class="text-3xl sm:text-4xl lg:text-5xl leading-none uppercase w-fit font-bold text-yellow-400 tracking-tight"
-          >
-            Web Developer
-          </h1>
-          <p
-            class="mt-8 text-lg max-w-96 md:w-full md:text-xl lg:font-medium font-light leading-none tracking-tight"
-          >
-            I'm a front-end developer focused on crafting clean & user-friendly
-            experiences. I am passionate about builting excellent software that
-            improves the lives of those around me.
-          </p>
-        </div>
-      </section>
-      <section
-        data-scroll
-        data-scroll-section
-        data-scroll-speed=".3"
-        id="about-me"
-        class="flex flex-col gap-8 items-center px-8 md:gap-12 relative py-10 border-t border-zinc-600 bg-zinc-950 overflow-hidden"
-      >
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
-          About <span class="text-yellow-400">Me</span>
-        </h2>
-        <div
-          id="personal-info"
-          class="w-full flex flex-wrap justify-center items-center gap-6"
-        >
-          <div id="left-info" class="w-full xl:w-6/12">
+            <div
+                id="loading-overlay"
+                class="w-0 h-full bg-zinc-200 absolute top-0 left-0"
+            ></div>
             <h3
-              class="text-xl sm:text-2xl lg:text-3xl uppercase font-medium tracking-tight pb-8"
+                class="text-4xl md:text-6xl text-zinc-200 font-thin mix-blend-difference absolute md:top-1/2 md:left-[10%] top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
-              Personal information
+                0%
             </h3>
-            <div id="my-self" class="flex flex-wrap w-full">
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                First Name: <span class="text-zinc-50 font-medium">Ali</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Last Name: <span class="text-zinc-50 font-medium">Haider</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Age: <span class="text-zinc-50 font-medium">23 Years</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Nationality:
-                <span class="text-zinc-50 font-medium">Pakistani</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Languages:
-                <span class="text-zinc-50 font-medium"
-                  >Urdu, English, German</span
-                >
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Freelance:
-                <span class="text-zinc-50 font-medium">Available</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Address:
-                <span class="text-zinc-50 font-medium">Punjab, Pakistan</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Phone:
-                <span class="text-zinc-50 font-medium">+92 349 690 2402</span>
-              </h4>
-              <h4
-                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
-              >
-                Email:
-                <span class="text-zinc-50 font-medium"
-                  >gorayaali80@gmail.com</span
-                >
-              </h4>
-            </div>
-            <a href="./assets/Ali Haider CV.jpg" download="">
-              <div
-                id="cv-info"
-                class="mt-6 border-2 border-yellow-500 relative rounded-full w-fit cursor-pointer overflow-hidden"
-              >
+            <h1
+                class="text-5xl md:text-7xl text-zinc-200 font-semibold relative mix-blend-difference italic"
+            >
+                GiZMo47
+            </h1>
+        </div>
+        <main data-scroll-container class="overflow-hidden relative h-screen">
+            <nav
+                class="px-6 lg:px-10 h-[10vh] w-full fixed top-0 left-0 z-50 flex justify-between items-center"
+            >
+                <div id="logo" class="text-2xl font-medium">GiZMo47</div>
                 <div
-                  id="btn-overlay"
-                  class="bg-yellow-500 absolute w-fit h-full top-0 right-0 rounded-full transition duration-500 pointer-events-none"
+                    id="lines"
+                    class="relative h-6 w-16 cursor-pointer md:hidden"
                 >
-                  <span
-                    class="inline-flex justify-center items-center w-12 h-12 bg-yellow-500 rounded-full absolute right-0 top-0 text-zinc-950"
-                    ><i class="fa-solid fa-download"></i
-                  ></span>
+                    <div
+                        class="line top-[35%] w-16 h-[2px] bg-zinc-200 absolute left-[50%] -translate-x-1/2"
+                    ></div>
+                    <div
+                        class="line top-[65%] w-16 h-[2px] bg-zinc-200 absolute left-[50%] -translate-x-1/2"
+                    ></div>
                 </div>
-                <h4
-                  class="text-base uppercase font-medium flex items-center h-12 pl-4 pr-14 gap-2 transition-all duration-300 relative pointer-events-none"
+                <div
+                    id="nav-menu-icons"
+                    class="flex flex-col md:flex-row gap-6 absolute -right-16 top-20 md:right-10 md:top-1/2 md:-translate-y-1/2"
                 >
-                  Download CV
-                </h4>
-              </div>
-            </a>
-          </div>
-          <div
-            id="right-info"
-            class="w-full xl:w-5/12 flex flex-wrap justify-center items-center gap-2"
-          >
+                    <a href="#landing-page" class="nav-icon activated">
+                        <i
+                            class="fa-solid fa-house transition duration-200"
+                        ></i>
+                    </a>
+                    <a href="#about-me" class="nav-icon">
+                        <i class="fa-solid fa-user transition duration-200"></i>
+                    </a>
+                    <a href="#my-work" class="nav-icon">
+                        <i
+                            class="fa-solid fa-briefcase transition duration-200"
+                        ></i>
+                    </a>
+                    <a href="#contact-me" class="nav-icon">
+                        <i
+                            class="fa-solid fa-envelope transition duration-200"
+                        ></i>
+                    </a>
+                </div>
+            </nav>
+            <section
+                data-scroll
+                data-scroll-section
+                data-scroll-speed="-.3"
+                id="landing-page"
+                class="flex flex-col md:flex-row justify-start md:justify-evenly gap-16 items-center px-8 relative py-20 mt-12 bg-zinc-950 overflow-hidden"
+            >
+                <div id="left-side" class="h-[50vh] max-w-72 relative">
+                    <div
+                        class="absolute w-full h-full bg-yellow-600 -left-5 -bottom-5 rounded-2xl"
+                    ></div>
+                    <img
+                        class="h-full w-full object-cover rounded-2xl relative border border-zinc-600 bg-zinc-950"
+                        src="./assets/portfolio-Img-1.jpg"
+                        alt=""
+                    />
+                </div>
+                <div
+                    id="right-side"
+                    class="flex flex-col justify-center items-center md:w-6/12 lg:w-5/12"
+                >
+                    <h1
+                        class="text-3xl sm:text-4xl lg:text-5xl leading-none uppercase w-fit font-bold text-yellow-400 tracking-tight relative before:absolute before:top-4 sm:before:top-5 lg:before:top-6 before:-left-10 sm:before:-left-14 before:w-8 sm:before:w-12 before:h-1 lg:before:h-2 before:bg-yellow-400"
+                    >
+                        I'm Ali Haider.
+                    </h1>
+                    <h1
+                        class="text-3xl sm:text-4xl lg:text-5xl leading-none uppercase w-fit font-bold text-yellow-400 tracking-tight"
+                    >
+                        Web Developer
+                    </h1>
+                    <p
+                        class="mt-8 text-lg max-w-96 md:w-full md:text-xl lg:font-medium font-light leading-none tracking-tight"
+                    >
+                        I'm a full stack developer dedicated to building robust
+                        and scalable web applications. I specialize in creating
+                        seamless user experiences on the front end while
+                        ensuring efficient and secure back-end functionality. I
+                        am passionate about delivering high-quality software
+                        that not only meets business goals but also enhances
+                        everyday life for users.
+                    </p>
+                </div>
+            </section>
+            <section
+                data-scroll
+                data-scroll-section
+                data-scroll-speed=".3"
+                id="about-me"
+                class="flex flex-col gap-8 items-center px-8 md:gap-12 relative py-10 border-t border-zinc-600 bg-zinc-950 overflow-hidden"
+            >
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase"
+                >
+                    About <span class="text-yellow-400">Me</span>
+                </h2>
+                <div
+                    id="personal-info"
+                    class="w-full flex flex-wrap justify-center items-center gap-6"
+                >
+                    <div id="left-info" class="w-full xl:w-6/12">
+                        <h3
+                            class="text-xl sm:text-2xl lg:text-3xl uppercase font-medium tracking-tight pb-8"
+                        >
+                            Personal information
+                        </h3>
+                        <div id="my-self" class="flex flex-wrap w-full">
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                First Name:
+                                <span class="text-zinc-50 font-medium"
+                                    >Ali</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Last Name:
+                                <span class="text-zinc-50 font-medium"
+                                    >Haider</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Age:
+                                <span class="text-zinc-50 font-medium"
+                                    >23 Years</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Nationality:
+                                <span class="text-zinc-50 font-medium"
+                                    >Pakistani</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Languages:
+                                <span class="text-zinc-50 font-medium"
+                                    >Urdu, English, German</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Freelance:
+                                <span class="text-zinc-50 font-medium"
+                                    >Available</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Address:
+                                <span class="text-zinc-50 font-medium"
+                                    >Punjab, Pakistan</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Phone:
+                                <span class="text-zinc-50 font-medium"
+                                    >+92 349 690 2402</span
+                                >
+                            </h4>
+                            <h4
+                                class="w-full sm:w-5/12 text-zinc-400 text-lg py-1 sm:odd:w-7/12"
+                            >
+                                Email:
+                                <span class="text-zinc-50 font-medium"
+                                    >gorayaali80@gmail.com</span
+                                >
+                            </h4>
+                        </div>
+                        <a href="./assets/Ali Haider CV.jpg" download="">
+                            <div
+                                id="cv-info"
+                                class="mt-6 border-2 border-yellow-500 relative rounded-full w-fit cursor-pointer overflow-hidden"
+                            >
+                                <div
+                                    id="btn-overlay"
+                                    class="bg-yellow-500 absolute w-fit h-full top-0 right-0 rounded-full transition duration-500 pointer-events-none"
+                                >
+                                    <span
+                                        class="inline-flex justify-center items-center w-12 h-12 bg-yellow-500 rounded-full absolute right-0 top-0 text-zinc-950"
+                                        ><i class="fa-solid fa-download"></i
+                                    ></span>
+                                </div>
+                                <h4
+                                    class="text-base uppercase font-medium flex items-center h-12 pl-4 pr-14 gap-2 transition-all duration-300 relative pointer-events-none"
+                                >
+                                    Download CV
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        id="right-info"
+                        class="w-full xl:w-5/12 flex flex-wrap justify-center items-center gap-2"
+                    >
+                        <div
+                            class="about-work w-full max-w-96 border-2 border-zinc-700 rounded-md p-8 duration-200 transition"
+                        >
+                            <h3 class="text-6xl font-bold mb-4">2+</h3>
+                            <h4
+                                class="text-2xl font-normal tracking-tight ml-12 w-fit"
+                            >
+                                Years of
+                            </h4>
+                            <h4
+                                class="text-2xl font-normal tracking-tight ml-12 w-fit"
+                            >
+                                Experience
+                            </h4>
+                        </div>
+                        <div
+                            class="about-work w-full max-w-96 border-2 border-zinc-700 rounded-md p-8 duration-200 transition"
+                        >
+                            <h3 class="text-6xl font-bold mb-4">8+</h3>
+                            <h4
+                                class="text-2xl font-normal tracking-tight ml-12 w-fit"
+                            >
+                                Completed
+                            </h4>
+                            <h4
+                                class="text-2xl font-normal tracking-tight ml-12 w-fit"
+                            >
+                                Projects
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div
-              class="about-work w-full max-w-96 border-2 border-zinc-700 rounded-md p-8 duration-200 transition"
+                data-scroll
+                data-scroll-section
+                data-scroll-speed="-.2"
+                id="skills"
+                class="flex flex-col items-center px-8 relative pt-10 pb-20 my-4 border-t border-zinc-600 bg-zinc-950"
             >
-              <h3 class="text-6xl font-bold mb-4">1+</h3>
-              <h4 class="text-2xl font-normal tracking-tight ml-12 w-fit">
-                Years of
-              </h4>
-              <h4 class="text-2xl font-normal tracking-tight ml-12 w-fit">
-                Experience
-              </h4>
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase"
+                >
+                    My <span class="text-yellow-400">Skills</span>
+                </h2>
+                <div
+                    id="all-skills"
+                    class="w-full md:w-[80%] flex flex-wrap gap-16 md:gap-20 lg:gap-32 justify-center items-center mt-12"
+                >
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            REACT
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/7-react-2.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            LARAVEL
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/10-laravel.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            TYPESCRIPT
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/8-typescript-logo.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            PHP
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/12-php.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            TAILWIND
+                        </h4>
+                        <img
+                            class="h-1/3 object-cover relative"
+                            src="./assets/skill-logo/4-tailwind-css-logo.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            JAVASCRIPT
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/6-javascript-logo.svg"
+                            alt=""
+                        />
+                    </div>
+                    <!-- <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            HTML
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/1-html-logo.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            CSS
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/2-css-logo.svg"
+                            alt=""
+                        />
+                    </div> -->
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            MySQL
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/11-mysql-logo-pure.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            BOOTSTRAP
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/3-bootstrap-5-logo.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <!-- <div
+                        class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
+                    >
+                        <h4
+                            class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
+                        >
+                            SASS
+                        </h4>
+                        <img
+                            class="h-1/2 object-cover relative"
+                            src="./assets/skill-logo/4.5-sass.svg"
+                            alt=""
+                        />
+                    </div> -->
+                </div>
             </div>
+            <section
+                data-scroll
+                data-scroll-section
+                data-scroll-speed=".2"
+                id="my-work"
+                class="flex flex-col items-center px-8 relative py-10 border-t border-zinc-600 bg-zinc-950"
+            >
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase"
+                >
+                    My <span class="text-yellow-400">Work</span>
+                </h2>
+                <div
+                    id="all-work"
+                    class="w-full flex flex-wrap justify-center items-center gap-6 my-6 mt-12"
+                >
+                    <a
+                        href="https://its-gizmo47.github.io/Obys-Agency-Clone/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/1-project-obys.jpg"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit Now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Lazarev-Agency-Clone/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/2-project-lazarev.jpg"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Ahmad-Portfolio-Bootstrap/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/3-portfolioo.png"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Corso-Clone-Bootstrap/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/4-corso-bootstrap.png"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Treadline-Landing-Page/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/5-project-treadline.PNG"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Vera-Bootstrap/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/6-vera-bootstrap.png"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Theme-Clock-JS-/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/7-project-clock.PNG"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://its-gizmo47.github.io/Ebook-Blog-Bootstrap/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/8- Ebook Botstrap.png"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                    <a
+                        href="https://ochi-clone-react.vercel.app/"
+                        class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
+                    >
+                        <img
+                            class="w-full h-full object-cover relative transition duration-500"
+                            src="./assets/Projects-img/9-ochi.jpg"
+                            alt=""
+                        />
+                        <h3
+                            class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
+                        >
+                            Visit now
+                        </h3>
+                    </a>
+                </div>
+            </section>
             <div
-              class="about-work w-full max-w-96 border-2 border-zinc-700 rounded-md p-8 duration-200 transition"
+                data-scroll
+                data-scroll-section
+                data-scroll-speed="-.1"
+                id="education"
+                class="flex flex-col items-center px-8 relative py-10 border-t border-zinc-600 bg-zinc-950 overflow-hidden"
             >
-              <h3 class="text-6xl font-bold mb-4">5+</h3>
-              <h4 class="text-2xl font-normal tracking-tight ml-12 w-fit">
-                Completed
-              </h4>
-              <h4 class="text-2xl font-normal tracking-tight ml-12 w-fit">
-                Projects
-              </h4>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div
-        data-scroll
-        data-scroll-section
-        data-scroll-speed="-.2"
-        id="skills"
-        class="flex flex-col items-center px-8 relative pt-10 pb-20 my-4 border-t border-zinc-600 bg-zinc-950"
-      >
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
-          My <span class="text-yellow-400">Skills</span>
-        </h2>
-        <div
-          id="all-skills"
-          class="w-full md:w-[80%] flex flex-wrap gap-16 md:gap-20 lg:gap-32 justify-center items-center mt-12"
-        >
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              HTML
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/1-html-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              CSS
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/2-css-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              BOOTSTRAP
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/3-bootstrap-5-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              TAILWIND
-            </h4>
-            <img
-              class="h-1/3 object-cover relative"
-              src="./assets/skill-logo/4-tailwind-css-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              SASS
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/4.5-sass.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              JAVASCRIPT
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/6-javascript-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              TYPESCRIPT
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/8-typescript-logo.svg"
-              alt=""
-            />
-          </div>
-          <div
-            class="skill-container w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 relative flex flex-col justify-center items-center gap-2"
-          >
-            <h4
-              class="text-sm sm:text-base lg:text-lg font-medium absolute top-1/2 left-1/2 -translate-x-1/2 opacity-0 scale-0"
-            >
-              REACT
-            </h4>
-            <img
-              class="h-1/2 object-cover relative"
-              src="./assets/skill-logo/7-react-2.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <section
-        data-scroll
-        data-scroll-section
-        data-scroll-speed=".2"
-        id="my-work"
-        class="flex flex-col items-center px-8 relative py-10 border-t border-zinc-600 bg-zinc-950"
-      >
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
-          My <span class="text-yellow-400">Work</span>
-        </h2>
-        <div
-          id="all-work"
-          class="w-full flex flex-wrap justify-center items-center gap-6 my-6 mt-12"
-        >
-          <a
-            href="https://its-gizmo47.github.io/Obys-Agency-Clone/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/1-project-obys.jpg"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit Now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Lazarev-Agency-Clone/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/2-project-lazarev.jpg"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Ahmad-Portfolio-Bootstrap/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/3-portfolioo.png"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Corso-Clone-Bootstrap/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/4-corso-bootstrap.png"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Treadline-Landing-Page/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/5-project-treadline.PNG"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Vera-Bootstrap/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/6-vera-bootstrap.png"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Theme-Clock-JS-/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/7-project-clock.PNG"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://its-gizmo47.github.io/Ebook-Blog-Bootstrap/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/8- Ebook Botstrap.png"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-          <a
-            href="https://ochi-clone-react.vercel.app/"
-            class="work-projects h-52 w-72 lg:h-72 lg:w-96 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-400 duration-300 transition relative border border-gray-500"
-          >
-            <img
-              class="w-full h-full object-cover relative transition duration-500"
-              src="./assets/Projects-img/9-ochi.jpg"
-              alt=""
-            />
-            <h3
-              class="text-3xl uppercase font-bold tracking-tight text-yellow-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden whitespace-nowrap"
-            >
-              Visit now
-            </h3>
-          </a>
-        </div>
-      </section>
-      <div
-        data-scroll
-        data-scroll-section
-        data-scroll-speed="-.1"
-        id="education"
-        class="flex flex-col items-center px-8 relative py-10 border-t border-zinc-600 bg-zinc-950 overflow-hidden"
-      >
-        <h2
-          class="text-3xl sm:text-4xl lg:text-5xl font-semibold md:font-bold uppercase w-fit"
-        >
-          Experience & <span class="text-yellow-400">Education</span>
-        </h2>
-        <div
-          id="all-education"
-          class="mt-12 md:mt-16 flex flex-wrap justify-center items-center gap-10 mx-4"
-        >
-          <div
-            class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
-          >
-            <div
-              class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
-            >
-              <i class="fa-solid fa-briefcase text-zinc-950"></i>
-            </div>
-            <h6
-              class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
-            >
-              2023 - Present
-            </h6>
-            <h3 class="font-bold text-2xl mb-2 uppercase">
-              Web Developer &mdash;
-              <span class="text-lg font-medium inline-block">Freelancer</span>
-            </h3>
-            <p class="text-sm md:text-base">
-              Throughout my academic career, I have gained extensive knowledge
-              of web technologies such as HTML, CSS, JavaScript and popular
-              libraries like React and Tailwind.
-            </p>
-          </div>
-          <!-- <div class="education-card w-full lg:w-5/12  px-8 pb-4 flex flex-col border-l border-zinc-600 relative">
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-5xl font-semibold md:font-bold uppercase w-fit"
+                >
+                    Experience & <span class="text-yellow-400">Education</span>
+                </h2>
+                <div
+                    id="all-education"
+                    class="mt-12 md:mt-16 flex flex-wrap justify-center items-center gap-10 mx-4"
+                >
+                    <div
+                        class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+                    >
+                        <div
+                            class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
+                        >
+                            <i class="fa-solid fa-briefcase text-zinc-950"></i>
+                        </div>
+                        <h6
+                            class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
+                        >
+                            2023 - Present
+                        </h6>
+                        <h3 class="font-bold text-2xl mb-2 uppercase">
+                            Web Developer &mdash;
+                            <span class="text-lg font-medium inline-block"
+                                >Freelancer</span
+                            >
+                        </h3>
+                        <p class="text-sm md:text-base">
+                            Throughout my academic career, I have gained
+                            extensive knowledge of web technologies such as
+                            HTML, CSS, JavaScript and popular libraries like
+                            React and Tailwind.
+                        </p>
+                    </div>
+                    <!-- <div class="education-card w-full lg:w-5/12  px-8 pb-4 flex flex-col border-l border-zinc-600 relative">
             <div class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"><i class="fa-solid fa-graduation-cap text-zinc-950"></i></div>
             <h6 bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4>2022</h6>
             <h3 class="font-bold text-2xl mb-2 uppercase">Language &mdash; <span class="text-lg font-medium inline-block">English/German</span></h3>
@@ -581,173 +677,191 @@
               I know some basic of it.
             </p >
           </div> -->
-          <div
-            class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
-          >
-            <div
-              class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
-            >
-              <i class="fa-solid fa-graduation-cap text-zinc-950"></i>
+                    <div
+                        class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+                    >
+                        <div
+                            class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
+                        >
+                            <i
+                                class="fa-solid fa-graduation-cap text-zinc-950"
+                            ></i>
+                        </div>
+                        <h6
+                            class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
+                        >
+                            2019 - 2023
+                        </h6>
+                        <h3 class="font-bold text-2xl mb-2 uppercase">
+                            Bachelor Degree &mdash;
+                            <span class="text-lg font-medium inline-block"
+                                >information technology</span
+                            >
+                        </h3>
+                        <p class="text-sm md:text-base">
+                            I hold a Bachelor's degree in Information Technology
+                            from University of Education, Lahore. Where my
+                            academic journey focused on a comprehensive
+                            understanding of IT.
+                        </p>
+                    </div>
+                    <div
+                        class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+                    >
+                        <div
+                            class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
+                        >
+                            <i
+                                class="fa-solid fa-graduation-cap text-zinc-950"
+                            ></i>
+                        </div>
+                        <h6
+                            class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
+                        >
+                            2017 - 2019
+                        </h6>
+                        <h3 class="font-bold text-2xl mb-2 uppercase">
+                            Intermediate &mdash;
+                            <span class="text-lg font-medium inline-block"
+                                >FSc. Engineering</span
+                            >
+                        </h3>
+                        <p class="text-sm md:text-base">
+                            I completed my Intermediate in Engineering. My
+                            education has provided me with a solid foundation in
+                            engineering concepts as well as a strong analytical
+                            mindset that I bring to every task.
+                        </p>
+                    </div>
+                    <div
+                        class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
+                    >
+                        <div
+                            class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
+                        >
+                            <i
+                                class="fa-solid fa-graduation-cap text-zinc-950"
+                            ></i>
+                        </div>
+                        <h6
+                            class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
+                        >
+                            2015 - 2017
+                        </h6>
+                        <h3 class="font-bold text-2xl mb-2 uppercase">
+                            Matric &mdash;
+                            <span class="text-lg font-medium inline-block"
+                                >Bise sargodha</span
+                            >
+                        </h3>
+                        <p class="text-sm md:text-base">
+                            I completed my Matriculation from BISE Sargodha. It
+                            provided me with some basic foundational concepts of
+                            Information Technology.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <h6
-              class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
+            <section
+                data-scroll
+                data-scroll-section
+                data-scroll-speed=".1"
+                id="contact-me"
+                class="flex flex-col items-center px-8 relative py-8 border-t border-zinc-600 bg-zinc-950"
             >
-              2019 - 2023
-            </h6>
-            <h3 class="font-bold text-2xl mb-2 uppercase">
-              Bachelor Degree &mdash;
-              <span class="text-lg font-medium inline-block"
-                >information technology</span
-              >
-            </h3>
-            <p class="text-sm md:text-base">
-              I hold a Bachelor's degree in Information Technology from
-              University of Education, Lahore. Where my academic journey focused
-              on a comprehensive understanding of IT.
-            </p>
-          </div>
-          <div
-            class="education-card edu-left w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
-          >
-            <div
-              class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
-            >
-              <i class="fa-solid fa-graduation-cap text-zinc-950"></i>
-            </div>
-            <h6
-              class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
-            >
-              2017 - 2019
-            </h6>
-            <h3 class="font-bold text-2xl mb-2 uppercase">
-              Intermediate &mdash;
-              <span class="text-lg font-medium inline-block"
-                >FSc. Engineering</span
-              >
-            </h3>
-            <p class="text-sm md:text-base">
-              I completed my Intermediate in Engineering. My education has
-              provided me with a solid foundation in engineering concepts as
-              well as a strong analytical mindset that I bring to every task.
-            </p>
-          </div>
-          <div
-            class="education-card edu-right w-full lg:w-5/12 px-8 pb-4 flex flex-col border-l border-zinc-600 relative"
-          >
-            <div
-              class="left-icon bg-yellow-400 h-10 w-10 absolute rounded-full flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1 transition duration-300"
-            >
-              <i class="fa-solid fa-graduation-cap text-zinc-950"></i>
-            </div>
-            <h6
-              class="bg-zinc-700 text-zinc-300 w-fit rounded-full px-6 py-1 uppercase font-semibold text-sm mb-4"
-            >
-              2015 - 2017
-            </h6>
-            <h3 class="font-bold text-2xl mb-2 uppercase">
-              Matric &mdash;
-              <span class="text-lg font-medium inline-block"
-                >Bise sargodha</span
-              >
-            </h3>
-            <p class="text-sm md:text-base">
-              I completed my Matriculation from BISE Sargodha. It provided me
-              with some basic foundational concepts of Information Technology.
-            </p>
-          </div>
-        </div>
-      </div>
-      <section
-        data-scroll
-        data-scroll-section
-        data-scroll-speed=".1"
-        id="contact-me"
-        class="flex flex-col items-center px-8 relative py-8 border-t border-zinc-600 bg-zinc-950"
-      >
-        <h2
-          class="text-3xl sm:text-4xl lg:text-5xl font-semibold md:font-bold uppercase mb-6 w-fit"
-        >
-          Contact <span class="text-yellow-400">Me</span>
-        </h2>
-        <div id="contact-details">
-          <div id="feel-free-to-contact">
-            <h3
-              class="text-lg sm:text-xl lg:text-2xl uppercase font-medium tracking-tight mb-3"
-            >
-              Don't be shy ! &mdash;
-              <span class="text-sm sm:text-md lg:text-lg text-yellow-400"
-                >Get in touch</span
-              >
-            </h3>
-            <p class="text-sm md:text-base lg:text-lg">
-              Feel free to get in touch with me. I am always open to discussing
-              new projects, creative ideas or opportunities to be part of your
-              visions.
-            </p>
-          </div>
-          <div id="contact-info" class="py-8 flex flex-col gap-6">
-            <div class="info-card flex gap-8">
-              <div
-                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
-              >
-                <i
-                  class="fa-solid fa-map transition duration-200 text-zinc-950"
-                ></i>
-              </div>
-              <div class="info-details">
-                <h5 class="text-zinc-400 uppercase lg:text-lg">
-                  Address point
-                </h5>
-                <h6 class="font-medium">Sargodha, Punjab, Pakistan.</h6>
-              </div>
-            </div>
-            <div class="info-card flex gap-8">
-              <div
-                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
-              >
-                <i
-                  class="fa-solid fa-envelope transition duration-200 text-zinc-950"
-                ></i>
-              </div>
-              <div class="info-details">
-                <h5 class="text-zinc-400 uppercase lg:text-lg">mail me</h5>
-                <h6 class="font-medium">gorayaali80@gmail.com</h6>
-              </div>
-            </div>
-            <div class="info-card flex gap-8">
-              <div
-                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
-              >
-                <i
-                  class="fa-solid fa-phone transition duration-200 text-zinc-950"
-                ></i>
-              </div>
-              <div class="info-details">
-                <h5 class="text-zinc-400 uppercase lg:text-lg">call me</h5>
-                <h6 class="font-medium">+92 349 690 2402</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-5xl font-semibold md:font-bold uppercase mb-6 w-fit"
+                >
+                    Contact <span class="text-yellow-400">Me</span>
+                </h2>
+                <div id="contact-details">
+                    <div id="feel-free-to-contact">
+                        <h3
+                            class="text-lg sm:text-xl lg:text-2xl uppercase font-medium tracking-tight mb-3"
+                        >
+                            Don't be shy ! &mdash;
+                            <span
+                                class="text-sm sm:text-md lg:text-lg text-yellow-400"
+                                >Get in touch</span
+                            >
+                        </h3>
+                        <p class="text-sm md:text-base lg:text-lg">
+                            Feel free to get in touch with me. I am always open
+                            to discussing new projects, creative ideas or
+                            opportunities to be part of your visions.
+                        </p>
+                    </div>
+                    <div id="contact-info" class="py-8 flex flex-col gap-6">
+                        <div class="info-card flex gap-8">
+                            <div
+                                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
+                            >
+                                <i
+                                    class="fa-solid fa-map transition duration-200 text-zinc-950"
+                                ></i>
+                            </div>
+                            <div class="info-details">
+                                <h5 class="text-zinc-400 uppercase lg:text-lg">
+                                    Address point
+                                </h5>
+                                <h6 class="font-medium">
+                                    Sargodha, Punjab, Pakistan.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="info-card flex gap-8">
+                            <div
+                                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
+                            >
+                                <i
+                                    class="fa-solid fa-envelope transition duration-200 text-zinc-950"
+                                ></i>
+                            </div>
+                            <div class="info-details">
+                                <h5 class="text-zinc-400 uppercase lg:text-lg">
+                                    mail me
+                                </h5>
+                                <h6 class="font-medium">
+                                    gorayaali80@gmail.com
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="info-card flex gap-8">
+                            <div
+                                class="contact-icon flex justify-center items-center bg-yellow-400 h-10 w-10 rounded-xl"
+                            >
+                                <i
+                                    class="fa-solid fa-phone transition duration-200 text-zinc-950"
+                                ></i>
+                            </div>
+                            <div class="info-details">
+                                <h5 class="text-zinc-400 uppercase lg:text-lg">
+                                    call me
+                                </h5>
+                                <h6 class="font-medium">+92 349 690 2402</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <!-- LOCO-MOTIVE -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-    <!-- GSAP -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- GSAP SCROLL-TRIGGER -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+        <!-- LOCO-MOTIVE -->
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+        <!-- GSAP -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- GSAP SCROLL-TRIGGER -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="app.js"></script>
+    </body>
 </html>
